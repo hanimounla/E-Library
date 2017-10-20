@@ -1,0 +1,10 @@
+﻿<Application
+             xmlns="http://schemas.microsoft.com/netfx/2007/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:E_Library"
+             xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="E_Library.App"
+             StartupUri="windows\Login.xaml" Startup="OnAppStartup_UpdateThemeName" >
+    <Application.Resources>
+        <System:String x:Key="enterKey">Enter</System:String>
+    </Application.Resources>
+</Application>

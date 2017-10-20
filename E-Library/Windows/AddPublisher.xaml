@@ -1,0 +1,28 @@
+﻿<dx:DXWindow
+	xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:local="clr-namespace:E_Library"
+	x:Class="E_Library.AddPublisher" WindowStartupLocation="CenterScreen"
+	mc:Ignorable="d"
+	Title="Add Publisher" Height="414.857" Width="635" ResizeMode="NoResize">
+    <Grid>
+        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Height="22" Margin="164,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" FontSize="14"/>
+        <Label x:Name="label" Content="Publisher Name :" HorizontalAlignment="Left" Margin="40,55,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"  RenderTransformOrigin="0.551,0.655" Height="25" Width="119"/>
+        <Button x:Name="addBTN" HorizontalAlignment="Left" Margin="40,286,0,0" VerticalAlignment="Top" Width="143" Click="addBTN_Click" Height="54" Content="Add "  Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="White"/>
+        <Button x:Name="cancelBTN" HorizontalAlignment="Left" Margin="226,284,0,0" VerticalAlignment="Top" Width="143" Click="cancelBTN_Click" Height="56" Content="Cancel"  Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="White"/>
+        <Label x:Name="label_Copy1" Content="Address :" HorizontalAlignment="Left" Margin="40,121,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="25" Width="77"/>
+        <TextBox x:Name="addressTB" HorizontalAlignment="Left" Height="22" Margin="164,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" FontSize="14"/>
+        <Image x:Name="PicIE" Margin="414,55,43,123"/>
+        <Button x:Name="browsBTN" HorizontalAlignment="Left" Margin="408,270,0,0" VerticalAlignment="Top" Width="86" Click="browsBTN_Click" Height="30" Content="Browse" Background="#FFB7DA9E" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="White"/>
+        <Button x:Name="clearBTN" HorizontalAlignment="Left" Margin="506,270,0,0" VerticalAlignment="Top" Width="86" Click="clearBTN_Click" Height="30" Content="Clear" Background="#FFB7DA9E" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="White"/>
+        <Label x:Name="label_Copy8" Content="Publisher Picture" Margin="412,29,0,0" VerticalAlignment="Top" FontSize="11" FontWeight="Bold" HorizontalAlignment="Left" OpacityMask="Black" Height="21" Width="98"/>
+        <Button x:Name="searchOnlineBTN" Margin="408,310,37,0" VerticalAlignment="Top" Click="searchOnlineBTN_Click" Height="30" Content="Search online" Background="#FFB7DA9E" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="White"/>
+        <Label x:Name="label_Copy" Content="Details" HorizontalAlignment="Left" Margin="41,187,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="25" Width="78"/>
+        <TextBox x:Name="detailsTB" HorizontalAlignment="Left" Height="59" Margin="165,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" FontSize="14"/>
+        <Label x:Name="label_Copy2" Content="Contact :" HorizontalAlignment="Left" Margin="40,155,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="25" Width="77"/>
+        <TextBox x:Name="contactTB" HorizontalAlignment="Left" Height="22" Margin="164,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" FontSize="14"/>
+
+    </Grid>
+</dx:DXWindow>

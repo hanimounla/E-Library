@@ -1,0 +1,28 @@
+﻿<dx:DXWindow
+    x:Class="E_Library.Windows.Account"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    Title="Account" Height="347" Width="454" WindowStartupLocation="CenterScreen"  ResizeMode="CanMinimize"
+    >
+
+    <Grid>
+        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Height="22" Margin="170,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" FontSize="14" TabIndex="1" IsReadOnly="True"/>
+
+        <Label x:Name="label_Copy9" Content="User Name :" HorizontalAlignment="Left" Margin="33,44,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="25" />
+        <Label x:Name="label_Copy" Content="Old Password :" HorizontalAlignment="Left" Margin="33,102,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="25" />
+        <Button x:Name="changePassBTN" HorizontalAlignment="Left" Margin="52,247,0,0" VerticalAlignment="Top" Width="138" Click="changePassBTN_Click" Height="42" Content="Change Password"  Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="White" TabIndex="3"/>
+        <Button x:Name="cnacelBTN" HorizontalAlignment="Left" Margin="242,245,0,0" VerticalAlignment="Top" Width="123" Click="cnacelBTN_Click" Height="42" Content="Cancel"  Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="White" TabIndex="4"/>
+        <dxe:PasswordBoxEdit x:Name="oldPassTB" HorizontalAlignment="Left" Margin="170,101,0,0" VerticalAlignment="Top" Width="204" Height="22" TabIndex="2"/>
+        <Label x:Name="label_Copy1" Content="New Password :" HorizontalAlignment="Left" Margin="33,148,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Height="25" />
+        <dxe:PasswordBoxEdit x:Name="NewpassTB" HorizontalAlignment="Left" Margin="170,147,0,0" VerticalAlignment="Top" Width="204" Height="22" TabIndex="2" EditValueChanged="NewpassTB_EditValueChanged"/>
+        <Label x:Name="label_Copy2" Content="Confirm Password :" HorizontalAlignment="Left" Margin="33,192,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" />
+        <dxe:PasswordBoxEdit x:Name="confirmPassTB" HorizontalAlignment="Left" Margin="170,191,0,0" VerticalAlignment="Top" Width="204" Height="22" TabIndex="2"/>
+        <Label Name="passwordLBL" Content="" HorizontalAlignment="Left" Margin="170,168,0,0" VerticalAlignment="Top" Foreground="Red"/>
+        <Label Name ="confirmLBL" Content="" HorizontalAlignment="Left" Margin="172,213,0,0" VerticalAlignment="Top" Foreground="Red"/>
+
+
+    </Grid>
+</dx:DXWindow>

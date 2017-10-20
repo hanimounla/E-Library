@@ -1,0 +1,65 @@
+
+LIBRARY MANAGEMENT SYSTEM ver. 2.0
+- APPLICATION AND DEVELOPER INFO -
+
+NOTE: This is a back-up copy. I made some modifications for this program when i gave it to my client. But this file will work also. Enjoy!!!!!
+
+=======================================
+:: INFORMATION OF THE DEVELOPER ::
+=======================================
+Developer: Junald Astronomo Lagod
+Current Address: Lumogdang Subd., Kidapawan City, Philippines 09400
+Contact Number: +639287899820 (Philippines)
+Email Address: junaldlagod@yahoo.com
+Website Address: www.junaldlagod.cjb.net
+
+Language Commondly Used: VBA, VB, VB.NET, C#.NET, JAVA, ASP, ASP.NET, JSP
+Reserved Language: C++, VC++, C++.NET, J#.NET, PHP
+Architecture: N-Tier,2-Tier,Multi-Tier,.NET Smart Client Architecture(Under Study)
+RDBMS: MS Access, mySQL and SQL Server (Oracle is under study)
+
+- JOB EXPERIENCE -
+Company: Kidapawan City Municipal Hall
+Agency: Government Agency
+Departement: Engineer Department
+Job: Programmer/Technician/Designer
+
+Company: Support to Agrarian Reform Communities in Central Mindanao (STARCM)
+Agency: Semi Government Agency
+Funded: European Governement (Foreign  Funded)
+Department: Management and Information Group (MIG)
+Job:  Programmer/Technician/Designer/Web Developer
+
+- EDUCATIONAL BACKGROUND -
+Elementary: Kidapawan City Pilot Elementary School  
+Secondary: Kidapawan City National High School
+College: Systems Technology Institute (STI Kidapawan)
+Education: Diploma in E-Commerce Programming
+
+=======================================
+:: PROGRAM REQUIREMENTS ::
+=======================================
+1. Comuter (desktor, laptop or any)
+2. Microsoft Operating Systems(2000, XP or Higher version)
+3. Common Language Runtime (CLR)
+4. thats all
+
+
+=======================================
+:: DATABASE ::
+=======================================
+Database Name: MasterFile.mdb
+Database Passowrd: lib2006
+
+=======================================
+:: APPLICATION ::
+=======================================
+User ID: junaldlagod
+User Password: junaldlagod
+
+User ID: admin
+User Password: admin
+
+
+*NOTE: I AM WILLING TO WORK IN ABROAD AS PROGRAMMER AND WEB DEVELOPER 
+              OR ANY IT RELATED JOBS IN A RIGHT PRICE. THANKS!!!

@@ -1,0 +1,661 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7549936-3C77-4B3E-81FA-F2A937AE9104}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>\%40Resources\Library System.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>LibrarySystem</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LibrarySystem</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>LibrarySystem.clsStart</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <Name>CrystalDecisions.CrystalReports.Engine</Name>
+      <HintPath>..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <Name>CrystalDecisions.ReportSource</Name>
+      <HintPath>..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <Name>CrystalDecisions.Shared</Name>
+      <HintPath>..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <Name>CrystalDecisions.Windows.Forms</Name>
+      <HintPath>..\..\..\..\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll</HintPath>
+      <AssemblyFolderKey>hklm\crystal.net</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="%40CLASS\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="%40CLASS\clsApp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="%40CLASS\clsConnections.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="%40CLASS\clsFunctions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="%40CLASS\clsInstitutionSetup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="%40CLASS\clsStart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="%40CLASS\clsUserLogs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="%40CLASS\clsVariables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="%40CONTROLS\ctrlSeparator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="%40DATASETS\dsAdjustment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAdjustment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="%40DATASETS\dsBarrowed.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBarrowed.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="%40DATASETS\dsBarrowers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBarrowers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="%40DATASETS\dsBarrowers_Fines.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBarrowers_Fines.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="%40DATASETS\dsBooks.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBooks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="%40DATASETS\dsDueBooks.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDueBooks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="%40DATASETS\dsInventory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInventory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="%40DATASETS\dsLibrarians.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLibrarians.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="%40DATASETS\dsReturned.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReturned.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="%40FORMS\Do_End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\Do_FIRST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMAdjustments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMAdjustments_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBarrowedBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBarrowedBooks_Barrowers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBarrowedBooks_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBarrowedBooks_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBarrowedBooks_Returned.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBarrowers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBarrowers_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBarrowers_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBooks_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBooks_Monitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMBooks_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMCategory_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMCategory_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMCourses_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMCourse_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMDueBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMLevel_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMLevel_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMLibrarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMLibrarian_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMLibrarySetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMLogDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMReturnBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMSchoolYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMSchoolYear_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMSchoolYear_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMShortcuts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMZipCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMZipCodes_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\FORMZipCodes_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\LOGSCREEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="%40FORMS\SPLASHSCREEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptAdjustments1.cs">
+      <DependentUpon>rptAdjustments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptBarrowedBooks.cs">
+      <DependentUpon>rptBarrowedBooks.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptBarrowers.cs">
+      <DependentUpon>rptBarrowers.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptBarrowers_Fines.cs">
+      <DependentUpon>rptBarrowers_Fines.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptBooks.cs">
+      <DependentUpon>rptBooks.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptBooks_All.cs">
+      <DependentUpon>rptBooks_All.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptDueBooks.cs">
+      <DependentUpon>rptDueBooks.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptInventory.cs">
+      <DependentUpon>rptInventory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptLibrarians.cs">
+      <DependentUpon>rptLibrarians.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="rptReturnedBooks.cs">
+      <DependentUpon>rptReturnedBooks.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Content Include="%40DATASETS\dsAdjustment.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAdjustment.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="%40DATASETS\dsBarrowed.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBarrowed.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="%40DATASETS\dsBarrowers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBarrowers.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="%40DATASETS\dsBarrowers_Fines.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBarrowers_Fines.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="%40DATASETS\dsBooks.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBooks.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="%40DATASETS\dsDueBooks.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDueBooks.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="%40DATASETS\dsInventory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInventory.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="%40DATASETS\dsLibrarians.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLibrarians.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="%40DATASETS\dsReturned.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReturned.Designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="%40CONTROLS\ctrlSeparator.resx">
+      <DependentUpon>ctrlSeparator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\Do_End.resx">
+      <DependentUpon>Do_End.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\Do_FIRST.resx">
+      <DependentUpon>Do_FIRST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMAbout.resx">
+      <DependentUpon>FORMAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMAdjustments.resx">
+      <DependentUpon>FORMAdjustments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMAdjustments_Modify.resx">
+      <DependentUpon>FORMAdjustments_Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBarrowedBooks.resx">
+      <DependentUpon>FORMBarrowedBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBarrowedBooks_Barrowers.resx">
+      <DependentUpon>FORMBarrowedBooks_Barrowers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBarrowedBooks_History.resx">
+      <DependentUpon>FORMBarrowedBooks_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBarrowedBooks_New.resx">
+      <DependentUpon>FORMBarrowedBooks_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBarrowedBooks_Returned.resx">
+      <DependentUpon>FORMBarrowedBooks_Returned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBarrowers.resx">
+      <DependentUpon>FORMBarrowers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBarrowers_Modify.resx">
+      <DependentUpon>FORMBarrowers_Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBarrowers_View.resx">
+      <DependentUpon>FORMBarrowers_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBooks.resx">
+      <DependentUpon>FORMBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBooks_Modify.resx">
+      <DependentUpon>FORMBooks_Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBooks_Monitoring.resx">
+      <DependentUpon>FORMBooks_Monitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMBooks_View.resx">
+      <DependentUpon>FORMBooks_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMCategory.resx">
+      <DependentUpon>FORMCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMCategory_Modify.resx">
+      <DependentUpon>FORMCategory_Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMCategory_View.resx">
+      <DependentUpon>FORMCategory_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMCourses.resx">
+      <DependentUpon>FORMCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMCourses_Modify.resx">
+      <DependentUpon>FORMCourses_Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMCourse_View.resx">
+      <DependentUpon>FORMCourse_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMDueBooks.resx">
+      <DependentUpon>FORMDueBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMLevel.resx">
+      <DependentUpon>FORMLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMLevel_Modify.resx">
+      <DependentUpon>FORMLevel_Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMLevel_View.resx">
+      <DependentUpon>FORMLevel_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMLibrarian.resx">
+      <DependentUpon>FORMLibrarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMLibrarian_Modify.resx">
+      <DependentUpon>FORMLibrarian_Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMLibrarySetup.resx">
+      <DependentUpon>FORMLibrarySetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMLogDetails.resx">
+      <DependentUpon>FORMLogDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMReturnBooks.resx">
+      <DependentUpon>FORMReturnBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMSchoolYear.resx">
+      <DependentUpon>FORMSchoolYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMSchoolYear_Modify.resx">
+      <DependentUpon>FORMSchoolYear_Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMSchoolYear_View.resx">
+      <DependentUpon>FORMSchoolYear_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMSearch.resx">
+      <DependentUpon>FORMSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMShortcuts.resx">
+      <DependentUpon>FORMShortcuts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMViewer.resx">
+      <DependentUpon>FORMViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMZipCodes.resx">
+      <DependentUpon>FORMZipCodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMZipCodes_Modify.resx">
+      <DependentUpon>FORMZipCodes_Modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\FORMZipCodes_View.resx">
+      <DependentUpon>FORMZipCodes_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\LOGSCREEN.resx">
+      <DependentUpon>LOGSCREEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="%40FORMS\SPLASHSCREEN.resx">
+      <DependentUpon>SPLASHSCREEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAdjustments.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptAdjustments1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBarrowedBooks.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBarrowedBooks.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBarrowers.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBarrowers.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBarrowers_Fines.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBarrowers_Fines.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBooks.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBooks.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBooks_All.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBooks_All.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDueBooks.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDueBooks.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptInventory.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptInventory.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptLibrarians.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLibrarians.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReturnedBooks.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptReturnedBooks.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="%40DATASETS\dsAdjustment.xsc">
+      <DependentUpon>dsAdjustment.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsAdjustment.xss">
+      <DependentUpon>dsAdjustment.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsAdjustment.xsx">
+      <DependentUpon>dsAdjustment.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsBarrowed.xsc">
+      <DependentUpon>dsBarrowed.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsBarrowed.xss">
+      <DependentUpon>dsBarrowed.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsBarrowed.xsx">
+      <DependentUpon>dsBarrowed.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsBarrowers.xsx">
+      <DependentUpon>dsBarrowers.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsBarrowers_Fines.xsx">
+      <DependentUpon>dsBarrowers_Fines.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsBooks.xsc">
+      <DependentUpon>dsBooks.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsBooks.xss">
+      <DependentUpon>dsBooks.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsBooks.xsx">
+      <DependentUpon>dsBooks.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsDueBooks.xsx">
+      <DependentUpon>dsDueBooks.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsInventory.xsx">
+      <DependentUpon>dsInventory.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsLibrarians.xsx">
+      <DependentUpon>dsLibrarians.xsd</DependentUpon>
+    </None>
+    <None Include="%40DATASETS\dsReturned.xsx">
+      <DependentUpon>dsReturned.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
